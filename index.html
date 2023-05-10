@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="opn.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <!-- <a href="">Soul_King</a>-->
+                <a href="#"><img src="/artworks/0e14f88ffb9fda47ce3b746c55ed3440.jpg" alt="Soul_King"></a>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artworks">Artworks</a></li>
+                <div class="dpd">
+                    <button class="drpbtn">My Social Media</button>
+                    <div class="drpcont">
+                        <a href="https://www.instagram.com/soul_king_draws/" target="_blank">Instagram</a>
+                        <a href="https://www.deviantart.com/mugiwaramikey" target="_blank">DeviantArt</a>
+                        <a href="https://twitter.com/Mugiwara_Mikey" target="_blank">Twitter</a>
+                    </div>
+                </div>
+                <!-- <li><a href="">My Social Media</a></li> -->
+            </ul>
+            <a href="#" class="act_btn">Contact Me</a>
+            <div class="btn">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <button class="btn">Hello</button> -->
+            </div>
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#artworks">Artworks</a></li>
+            <!-- <li><a href="#">My Social Media</a></li> -->
+            <li><a href="#" class="act_btn">Contact Me</a></li>
+        </div>
+        <!-- <hr class="line"> -->
+    </header>
+    <main>
+        <!--     <div class="contain">
+            <div class="text">
+                <h2>Hi! I'm<br> Chitransh Saxena</h2>
+            </div>
+        </div> -->
+        <section class="details" id="about">
+            <div class="container">
+                <div class="content">
+                    <h1 class="mytitle">Hi! I'm <br><span>Chitransh Saxena</span>
+                    </h1>
+                    <p class="mytext">
+                        I'm an amateur artist and writer with a passion for drawing amazing artworks and writing great
+                        stories.
+                        For me story writing and drawing is way to turn one's imagination into reality.
+                    </p>
+                </div>
+                <div class="myimg">
+                    <img src="/artworks/Chitransh.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="myart" id="artworks">
+            <div class="artist">
+                <h2>My Artworks</h2>
+            </div>
+            <div id="traditional">
+                <div class="xyz">
+                    <div class="head">
+                        <h3>Pencil Sketches</h3>
+                    </div>
+                    <div class="doom"><a href="" class="art_btn">More</a></div>
+                </div>
+                <div class="artworks">
+                    <img src="/artworks/IMG_5865.JPG" alt="">
+                    <img src="/artworks/IMG_20230428_213636-01.jpeg" alt="">
+                    <img src="/artworks/Your lie in april.jpg" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="dome"><a href="" class="art_btn">More</a></div>
+            </div>
+            <div id="digital">
+                <div class="xyz">
+                    <div class="head">
+                        <h3>Digital Artworks</h3>
+                    </div>
+                    <div class="doom"><a href="" class="art_btn">More</a></div>
+                </div>
+                <div class="artworks">
+                    <img src="/artworks/Gohan.jpg" alt="">
+                    <img src="/artworks/Forgers.jpg" alt="">
+                    <img src="/artworks/Some stupid kids-1.png" alt="">
+                    <img src="/artworks/Koro Sensei.png" alt="">
+                </div>
+                <div class="dome"><a href="" class="art_btn">More</a></div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="foot_elements">
+                <a href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="">
+                    <i class="fab fa-deviantart"></i>
+                </a>
+            </div>
+        </div>
+        <div class="foot_list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#artworks">Artworks</a></li>
+                <a href="#" class="act_btn">Contact Me</a>
+            </ul>
+        </div>
+        
+        <p class="copyright">
+            Soul_King@2023
+        </p>
+    </footer>
+
+    <!-- JS -->
+
+    <script>
+        const togglebtn = document.querySelector('.btn')
+        const togglebtnIcon = document.querySelector('.btn i')
+        const dropdown = document.querySelector('.dropdown_menu')
+
+        togglebtn.onclick = function () {
+            dropdown.classList.toggle('open')
+            const isOpen = dropdown.classList.contains('open')
+
+            togglebtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
