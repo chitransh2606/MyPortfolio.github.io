@@ -207,7 +207,7 @@ section#home {
     align-items: center;
     justify-content: center;
     background: #795f8e;
-    height: 85vh;
+    height: 45rem;
     overflow: hidden;
 }
 
@@ -441,7 +441,7 @@ footer .copyright{
     }
 
     .myimg {
-        display: none;
+        margin: auto;
     }
 
     .content .mytitle {
